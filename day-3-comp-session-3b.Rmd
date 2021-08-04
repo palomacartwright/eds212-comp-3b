@@ -1,0 +1,63 @@
+---
+title: "Vectors in R"
+author: "Paloma Cartwright"
+date: "04/08/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+# Create a vector 
+vec_a <- c(4, 5)
+
+```
+
+Adding Another Code Chunk to practice the echo settings. 
+echo = TRUE means it will be printed in the knit, echo = FALSE means it will not be printed. 
+To make echo = FALSE in the code chunk,  
+it would look like this: 
+{r, echo= FALSE} and the code would not show in the knit
+
+```{r}
+
+vec_b <- c(-3, 10)
+
+```
+
+### Vector Addition
+
+```{r}
+vec_c <- vec_a + vec_b
+
+```
+
+### Vector Subtraction 
+
+```{r}
+vec_d <- vec_b - vec_a
+```
+
+### Vector Scalar Multiplication 
+
+```{r}
+vec_e = 4 * vec_b
+```
+
+### Vector Dot Product 
+
+```{r}
+# If we use the asterisk to try dot product: 
+vec_a * vec_b
+
+#The dot product actually is:
+
+vec_a %*% vec_b
+
+
+```
+
+
+
